@@ -1,2 +1,2 @@
 # My amazing python code
-print("Hell Diwiz")
+print("Hello Diwiz")
