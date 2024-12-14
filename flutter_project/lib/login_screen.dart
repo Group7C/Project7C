@@ -34,9 +34,14 @@ class _LoginScreenState extends State<LoginScreen> {
             height: height,
             width: width * 0.5,
             child: Container(
-
                 color: Colors.blue,
-                child: const Center(child: Text("Welcome!", style: TextStyle(color: Colors.white, fontSize: 30),)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: 200, width: 300 ,child: Image.asset("assets/welcome_image.jpg")),
+                    const Text("Welcome!", style: TextStyle(color: Colors.white, fontSize: 30),),
+                  ],
+                ),
                 ),
           ),
           // second half of the login screen USER DETAILS
@@ -84,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       }
                     });
                   },
-                  child: Text(getButtonText()),
+                  child: Text(getButtonText(), style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline),),
                 )
               ],
             ),
